@@ -1,0 +1,81 @@
+/* Escribir las reglas CSS en este archivo.
+   Cada regla tiene esta forma:
+
+   selector {
+     propiedad: valor;
+   }
+
+   Después de cada cambio: guardar (Ctrl + S) y refrescar el navegador (F5). */
+body {
+  background-color: #ffffff; /* Reemplaza con tu color de fondo preferido */
+  color: #333333;            /* Reemplaza con tu color de texto preferido */
+  font-family: Arial, sans-serif; /* Reemplaza con tu fuente preferida */
+  line-height: 1.6;
+  margin: 0;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem; 
+  margin: 0;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 1.75rem;
+  border-bottom: 2px solid #3498db;
+  
+}
+
+section {
+  background-color: #f4f4f9;   /* Color de fondo suave */
+  border: 1px solid #ccc;      /* Borde fino gris */
+  border-radius: 8px;          /* Esquinas redondeadas */
+  padding: 20px;               /* Espacio interno */
+  margin: 15px 0;              /* Espacio externo (arriba y abajo) */
+}
+
+.destacado {
+  background-color: #f0e68c; /* Puedes cambiar este color por el que prefieras */
+  font-weight: bold;
+  padding: 10px;            /* Puedes ajustar el espacio según tu diseño */
+}
+
+/*probando paleta de tres colores*/
+
+/* 1. Definición de la paleta de tres colores globales */
+:root {
+    --color-principal: #2E5A88;   /* Azul profundo para fondos principales o títulos */
+    --color-secundario: #F4F1EA;  /* Crema claro para el fondo de la página */
+    --color-destacado: #E67E22;   /* Naranja cálido para elementos llamativos (acentos) */
+}
+
+/* 2. Aplicación de la paleta a toda la página */
+body {
+    background-color: var(--color-secundario);
+    color: #333333; /* Texto oscuro para legibilidad */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: var(--color-principal);
+}
+
+/* 3. Estilo para el plato propio con la clase destacado */
+.destacado {
+    background-color: var(--color-destacado);
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    list-style-type: none; /* Opcional: quita el punto de la lista 
+    para que luzca como botón/tarjeta */
+    display: inline-block; /* Ajusta el fondo solo al tamaño del texto */
+    margin: 5px 0;
+}
